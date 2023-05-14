@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;500;700;900&display=swap');
 :root {
-    --dark: #0fb160;
+    --grass: #0fb160;
     --lime: #cff5c7;
     --green: #6bb882;
     --white: #FFF;
@@ -49,7 +49,7 @@ footer a {
 
 .nav a:hover,
 footer a:hover {
-    color: var(--dark)
+    color: var(--grass)
 }
 
 .nav input:focus {
@@ -141,7 +141,7 @@ footer a:hover {
 
 .shop-item .rating {
     cursor: pointer;
-    color: var(--dark);
+    color: var(--grass);
 }
 
 .shop-item .tags {
@@ -165,7 +165,7 @@ footer {
 }
 
 #nothing-found {
-    color: var(--dark);
+    color: var(--grass);
     position: absolute;
     white-space: nowrap;
     top: 50%;

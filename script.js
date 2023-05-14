@@ -107,7 +107,6 @@ function createShopCard(cardItem) {
 
     card.querySelector('h1').textContent = title;
     card.querySelector('p').textContent = description;
-    card.querySelector('.tags').textContent = tags;
     card.querySelector('span').textContent = `${price} руб`;
     card.querySelector('img').src = img;
 
@@ -118,6 +117,16 @@ function createShopCard(cardItem) {
         sprout.classList.add("fa", "fa-seedling");
         ratingBox.append(sprout);
     }
+
+    const tagsCase = card.querySelector('.tags');
+
+    tags.forEach((tag) => {
+        const element = document.createElement('span');
+        element.textContent = tag;
+        element.classList.add('tag');
+        tagsCase.append(element);
+    });
+
     return card;
 }
 
